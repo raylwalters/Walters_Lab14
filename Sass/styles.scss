@@ -1,0 +1,54 @@
+$font-stack: helvetica, sans-serif;
+@mixin align{
+	width:60%;
+	margin-right:auto;
+	margin-left:auto;
+	display:block;
+	text-align:center;
+}
+body{
+	background-color:silver;
+}
+
+img{
+	width:30%;
+	margin-right:auto;
+	margin-left:auto;
+	display:block;
+	margin-top:3%;
+}
+nav{
+	background-color:lightblue;
+	text-align:center;
+	height:50px;
+}
+li{
+	list-style-type:none;
+	display:inline;
+	margin:5%;
+	font-size:2em;
+	font-family: $font-stack;
+	color:black;
+}
+a{
+	color:black;
+	text-decoration:none;
+}
+h1{
+	@include align;
+	width:65%;
+	font-size:3em;
+
+}
+p{
+	@include align;
+	font-size:2em;
+}
+div{
+	border: 8px solid lightblue;
+	@include align;
+	margin-top:5%;
+}
+h1#fail{
+	font-size:4em;
+}
